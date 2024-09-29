@@ -5,7 +5,7 @@ Um projeto de Previsão do Tempo em Laravel
 ## Funcionalidades
 
 Um sistema que informa sobre o clima na localidade informada. Além disso, é possível consultar o histórico de climas das localidades consultas e dos climas salvos pelo usuário.
-Para o funcionamento do sistema é utilizado a API da [ViaCEP]([https://weatherstack.com/](https://viacep.com.br/) para a consulta do nome da cidade através do CEP. Também é utilizado a API [Real-Time & Historical World Weather Data API](https://weatherstack.com/) para a consulta da condição climática.
+Para o funcionamento do sistema é utilizado a API da [ViaCEP](https://viacep.com.br/) para a consulta do nome da cidade através do CEP. Também é utilizado a API [Real-Time & Historical World Weather Data API](https://weatherstack.com/) para a consulta da condição climática.
 
 
 ## Tecnologias
