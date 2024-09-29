@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                                 <div class="col" style="text-align: center;">
-                                    <button type="button" id="btn-compara-clima" onClick="comparaClimas()" class="btn btn-warning">Comparar</button>
+                                    <button type="button" id="btn-compara-clima" class="btn btn-warning">Comparar</button>
                                 </div>
 
                             </form>
