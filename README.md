@@ -45,6 +45,18 @@ php artisan migrate
 ```
 Este comando criará o banco de dados e as tabelas necessárias para a execução e funcionamento do Projeto.
 
+### Obtendo e configurando as credenciais da API WEATHERSTACK para obtenção das informações climáticas.
+
+Crie uma Conta em [Real-Time & Historical World Weather Data API](https://weatherstack.com/). Após a criação da conta é possível obter o token em Dashborad - Your API Access Key. 
+Esta chave será utilizada para o consumo da API em Dashboard.
+Tendo a chave, abra o arquivo .env novamente, procure por "WEATHERSTACK_API_KEY" e substitua o valor pela chave obtida no site.
+
+```xml
+
+WEATHERSTACK_API_KEY=0040b460e823b534f24e98b87189852c
+
+```
+
 ### Pronto! Seu ambiente e projeto está totalmente configurado. 
 
 ## Veja um pouco do funcionamento do Projeto: 
