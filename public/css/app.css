@@ -1,0 +1,229 @@
+html{
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0;
+    font-family: "Nunito", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+
+    /* background: linear-gradient(#000c85bf, #000c85bf, #002485b0, #002485b0); */
+    /* background: linear-gradient(90deg, rgb(72 47 173) 0%, rgb(68 45 191) 25%, rgb(68 45 191) 55%, rgb(41 0 255) 100%); */
+    background: linear-gradient(to bottom right, #012e7f, #008f95);
+}
+
+main{
+    margin-top: 10vh;
+    height: 90vh;
+}
+
+#climaForm{
+    max-width: 330px;
+}
+
+#card-clima-1{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+#card-compara-clima{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.topo{
+    text-align: center;
+    color: white;
+}
+
+#icon-condition{
+    /* width: 60px; */
+    width: 65px;
+    height: 60px;
+    display: block;
+    background-size: 61px;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.invalid-feedback-yellow{
+    color: #f9f400 !important;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border: 1px solid #dee2e6 !important;
+    background-image: none !important;
+}
+
+#resultHorarioLocal1{
+    text-align: right;
+    margin-top: 10px;
+}
+
+#periodoDia1{
+    font-weight: bold;
+}
+
+svg{
+    margin-bottom: 3px;
+}
+
+.indicesTempo{
+    padding: 0 !important;
+}
+
+.indicesTempo p{
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.indicesTempoItem{
+    text-align: left;
+    padding: 15px;
+    background: #ebebeb;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.indicesTempo span{
+    font-size: 13px;
+    color: #818181;
+}
+
+.card{
+    background: #ffffffab !important;
+}
+
+.card h1{
+    color: #002485b0;
+    font-weight: 600;
+}
+
+#saveClima{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    float: left;
+}
+
+#savedClima{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    float: left;
+}
+
+#compararClima{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    float: right;
+}
+
+#comparaCity1{
+    float: left;
+    text-align: center;
+}
+#comparaCity2{
+    float: right;
+    text-align: center;
+}
+
+.comparaTemperatura, .compareCondition{
+    text-align: center;
+}
+
+.compareItens{
+    text-align: center;
+}
+
+.listaItensCompara{
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1em !important;
+}
+
+.listaItensCompara p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.listaItensCompara span{
+    font-size: 13px;
+    color: #818181;
+}
+.listaItensCompara p{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.comparaHorarioLocal1{
+    float: left;
+    text-align: left;
+}
+.comparaHorarioLocal1 p{
+    margin-bottom: 0;
+}
+.comparaHorarioLocal1 span{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.comparaHorarioLocal2{
+    float: right;
+    text-align: right;
+}
+.comparaHorarioLocal2 p{
+    margin-bottom: 0;
+}
+.comparaHorarioLocal2 span{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box-hist{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+  
+.content-box {
+    text-align: center;
+}
+
+#historicoMain{
+    position: fixed;
+    background: #0000005e;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 999;
+    overflow: scroll;
+    padding-top: 2em;
+}
+
+.dx-button-mode-contained{
+    border-top-right-radius: 0px !important;
+}
+
+.dx-datagrid-header-panel .dx-toolbar{
+    border-radius: 10px !important;
+}
+
+.dx-datagrid{
+    border-radius: 10px !important;
+}
+
+#btnFecharHistorico{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
