@@ -1,1 +1,1 @@
-![Alt Text](/public/previsaoTempoAppGif.gif)
+![Alt Text](public/previsaoTempoAppGif.gif)
