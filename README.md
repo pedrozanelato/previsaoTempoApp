@@ -47,7 +47,7 @@ Este comando criará o banco de dados e as tabelas necessárias para a execuçã
 ### Obtendo e configurando as credenciais da API WEATHERSTACK para obtenção das informações climáticas.
 
 Crie uma Conta em [Real-Time & Historical World Weather Data API](https://weatherstack.com/). Após a criação da conta é possível obter o token em Dashborad - Your API Access Key. 
-Esta chave será utilizada para o consumo da API em Dashboard.
+Esta chave será utilizada para o consumo da API.
 Tendo a chave, abra o arquivo .env novamente, procure por "WEATHERSTACK_API_KEY" e substitua o valor pela chave obtida no site.
 
 ```xml
