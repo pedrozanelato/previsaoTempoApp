@@ -12,9 +12,6 @@ body{
     font-weight: 400;
     font-style: normal;
     color: white;
-
-    /* background: linear-gradient(#000c85bf, #000c85bf, #002485b0, #002485b0); */
-    /* background: linear-gradient(90deg, rgb(72 47 173) 0%, rgb(68 45 191) 25%, rgb(68 45 191) 55%, rgb(41 0 255) 100%); */
     background: linear-gradient(to bottom right, #012e7f, #008f95);
 }
 
@@ -226,4 +223,9 @@ svg{
 #btnFecharHistorico{
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+
+.spinner-border{
+    width: 1em !important;
+    height: 1em !important;
 }

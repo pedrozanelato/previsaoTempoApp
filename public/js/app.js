@@ -46,26 +46,35 @@ function applyHtmlInput(inputId, value) {
     $(`#${inputId}`).html(value);
 }
 
+function renderLoadingBtnGetCity(status, button, text = '') {
+    const textBtn = status ? `<div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>` : text;
+    $(`#${button}`).html(textBtn);
+}
+
 async function getCity(campoOrigem, campoDestino) {
     const cep = $(`#${campoOrigem}`).val();
     if (cep.length === 9) {
         try {
+            renderLoadingBtnGetCity(true, `btn${campoOrigem}`);
             const response = await fetch('/api/cep', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ cep })
             });
             const data = await response.json();
-
+            
+            renderLoadingBtnGetCity(false, `btn${campoOrigem}`, 'Procurar cidade');
             if (!data.error) {
                 $(`#${campoDestino}`).val(data.response.city);
             } else {
                 appendAlert(data.message, 'warning');
             }
         } catch (error) {
+            renderLoadingBtnGetCity(false, `btn${campoOrigem}`, 'Procurar cidade');
             appendAlert('Erro ao buscar cidade pelo CEP.', 'warning');
         }
     } else {
+        renderLoadingBtnGetCity(false, `btn${campoOrigem}`, 'Procurar cidade');
         appendAlert('Informe o CEP corretamente!', 'warning');
     }
 }

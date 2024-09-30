@@ -23,7 +23,7 @@
                                         <div class="input-group input-group-sm mb-3">
                                             <span class="input-group-text" id="inputGroup-sizing-sm">CEP</span>
                                             <input type="text" id="cep" class="form-control" aria-label="Digite o CEP"  name="cep" placeholder="Digite o CEP" aria-describedby="inputGroup-sizing-sm" onkeypress="clearInput('city')">
-                                            <button class="btn btn-outline-warning" onclick="getCity('cep', 'city')" type="button" id="button-addon2">Procurar Cidade</button>
+                                            <button class="btn btn-outline-warning col" onclick="getCity('cep', 'city')" type="button" id="btncep">Procurar Cidade</button>
                                         </div>
                                     </div>
                                     <div class="col">
@@ -73,7 +73,7 @@
                                     <div class="input-group input-group-sm mb-3">
                                         <span class="input-group-text" id="inputGroup-sizing-sm">CEP</span>
                                         <input type="text" id="cepCompare" class="form-control" aria-label="Digite o CEP"  name="cepCompare" placeholder="Digite o CEP" aria-describedby="inputGroup-sizing-sm" onkeypress="clearInput('cityCompare')">
-                                        <button class="btn btn-outline-warning" onclick="getCity('cepCompare', 'cityCompare')" type="button" id="button-addon2">Procurar Cidade</button>
+                                        <button class="btn btn-outline-warning col" onclick="getCity('cepCompare', 'cityCompare')" type="button" id="btncepCompare">Procurar cidade</button>
                                     </div>
                                 </div>
                                 <div class="col">
